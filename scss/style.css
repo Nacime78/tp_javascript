@@ -1,0 +1,299 @@
+@charset "UTF-8";
+body {
+  width: 80%;
+  margin: 0 auto;
+}
+
+* {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+.burger-icon {
+  position: absolute;
+  top: 2%;
+  right: 11.5%;
+}
+
+/* Sidenav menu */
+.sidenav {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: -250px;
+  background-color: #e8e8e8;
+  padding-top: 60px;
+  transition: left 0.5s ease;
+}
+
+/* Sidenav menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #111;
+}
+
+.sidenav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Active class */
+.sidenav.active {
+  left: 0;
+}
+
+/* Close btn */
+.sidenav .close {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+/* Icône burger */
+.burger-icon span {
+  display: block;
+  width: 35px;
+  height: 5px;
+  background-color: rgb(255, 255, 255);
+  margin: 6px 0;
+}
+
+#cars {
+  height: 500px;
+  background-image: url("../img/flashmcqueen.jpg");
+  background-size: cover;
+}
+
+#header1 {
+  height: 500px;
+  background-image: url("../img/background.jpg");
+  background-size: cover;
+}
+
+.textHeader {
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+  line-height: 4px;
+}
+
+.textHeader h4 {
+  font-size: 0.7em;
+}
+
+.input {
+  width: 72%;
+  height: 40px;
+  margin: 300px auto 0;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(164, 146, 146, 0.6);
+}
+
+.input input, select {
+  height: 30px;
+  align-self: center;
+  width: 20%;
+}
+
+.input select {
+  margin-left: 4px;
+  height: 34px;
+}
+
+.input button {
+  align-self: center;
+  color: white;
+  height: 34px;
+  margin-right: 4px;
+  background-color: rgba(2, 153, 40, 0.7);
+  border: none;
+  width: 20%;
+}
+
+main {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.top-main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-main h4 {
+  font-size: 1.5em;
+}
+
+.description button {
+  background-color: rgba(2, 153, 40, 0.7);
+  width: 150px;
+  height: 50px;
+  border: none;
+  color: white;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+}
+
+.ligne1 {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.fa-solid {
+  position: relative;
+  bottom: 90px;
+  display: none;
+}
+
+#voiture1:hover .fa-solid {
+  display: inline-block;
+}
+
+#voiture2:hover .fa-solid {
+  display: inline-block;
+}
+
+#voiture3:hover .fa-solid {
+  display: inline-block;
+}
+
+#voiture4:hover .fa-solid {
+  display: inline-block;
+}
+
+.ligne2 {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.ligne3 {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.ligne4 {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+hr {
+  opacity: 0.3;
+}
+
+.bot-main img {
+  width: 35%;
+}
+
+.bot-main {
+  width: 45%;
+  margin: 0 auto 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.agence {
+  line-height: 1.5em;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .input {
+    flex-wrap: wrap;
+    height: 34px;
+  }
+  .input button {
+    width: 100%;
+    margin: 0;
+    background-color: rgba(2, 153, 40, 0.7);
+  }
+  .input select {
+    margin: 0;
+  }
+  .input input {
+    width: 30%;
+  }
+  .input select {
+    width: 30%;
+  }
+  main {
+    width: 100%;
+  }
+  .ligne1 {
+    width: 90%;
+  }
+  .ligne2 {
+    width: 90%;
+  }
+  .ligne3 {
+    width: 90%;
+  }
+  .ligne4 {
+    width: 90%;
+  }
+  .bot-main {
+    width: 80%;
+  }
+}
+@media (min-width: 320px) and (max-width: 776px) {
+  body {
+    width: 100%;
+  }
+  .input {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    bottom: 30px;
+  }
+  .input input {
+    width: 100%;
+    margin: 0;
+  }
+  .input select {
+    margin: 0;
+    width: 100%;
+  }
+  .input button {
+    width: 100%;
+    margin: 0;
+  }
+  main {
+    width: 95%;
+  }
+  .ligne1 {
+    width: 95%;
+  }
+  .ligne2 {
+    width: 95%;
+  }
+  .ligne3 {
+    width: 95%;
+  }
+  .ligne4 {
+    width: 95%;
+  }
+  .bot-main {
+    width: 100%;
+  }
+  .burger-icon {
+    right: 5%;
+  }
+}/*# sourceMappingURL=style.css.map */

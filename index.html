@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voiture</title>
+    <!-- lien font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- lien css -->
+    <link rel="stylesheet" href="scss/style.css">
+</head>
+<body>
+    <header id="header1">
+        <div class="textHeader">
+            <h1>Bienvenue à bord</h1>
+            <h4>Location de voiture 24h/24 et 7j/7</h4>
+        </div>
+
+        <div class="burgerMenu">
+            <div id="mySidenav" class="sidenav">
+                <a id="closeBtn" href="#" class="close">×</a>
+                <ul>
+                    <li><a href="#">A propos</a></li>
+                    <li><a href="#">Nos services</a></li>
+                    <li><a href="#">Témoignages</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <a href="#" id="openBtn">
+                <span class="burger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+                </span>
+            </a>
+        </div>
+
+        <div class="input">
+            <select name="adresse" id="adresse">
+                <option value="Adresse de départ">Adresse de départ</option>
+            </select>
+
+            <input type="date" name="start-location">
+
+            <input type="date" name="end-location">
+
+            <button type="button">Valider ma recherche</button>
+        </div>
+    </header>
+
+    <!-- contenu principal -->
+    <main>
+        <!-- top main -->
+        <div class="top-main">
+            <h4>7 résultats</h4>
+            <select name="filtre" id="filtre">
+                <option value="decroissant">Prix décroissant</option>
+            </select>
+        </div>
+
+        <!-- middle main (voitures) -->
+        <div class="mid-main">
+            <div class="ligne1">
+                <div id="voiture1">
+                    <i class="fa-solid fa-caret-left"></i>
+                    <img src="img/vehicule1.png" alt="vehicule">
+                    <i class="fa-solid fa-caret-right"></i>
+                </div>
+                <div class="description">
+                    <h4>Peugeot 208</h4>
+                    <p>Diesel 5 portes bla bla</p>
+                    <p>999 € - Agence de Paris</p>
+                    <button type="button">Réserver et payer</button>
+                </div>
+            </div>
+            <hr>
+            <div class="ligne2">
+                <div id="voiture2">
+                    <i class="fa-solid fa-caret-left"></i>
+                    <img src="img/vehicule2.png" alt="vehicule">
+                    <i class="fa-solid fa-caret-right"></i>
+                </div>
+                <div class="description">
+                    <h4>Peugeot 208</h4>
+                    <p>Diesel 5 portes bla bla</p>
+                    <p>999 € - Agence de Paris</p>
+                    <button type="button">Réserver et payer</button>
+                </div>
+            </div>
+            <hr>
+            <div class="ligne3">
+                <div id="voiture3">
+                    <i class="fa-solid fa-caret-left"></i>
+                    <img src="img/vehicule3.png" alt="vehicule">
+                    <i class="fa-solid fa-caret-right"></i>
+                </div>
+                <div class="description">
+                    <h4>Peugeot 208</h4>
+                    <p>Diesel 5 portes bla bla</p>
+                    <p>999 € - Agence de Paris</p>
+                    <button type="button">Réserver et payer</button>
+                </div>
+            </div>
+            <hr>
+            <div class="ligne4">
+                <div id="voiture4">
+                    <i class="fa-solid fa-caret-left"></i>
+                    <img src="img/vehicule4.png" alt="vehicule">
+                    <i class="fa-solid fa-caret-right"></i>
+                </div>
+                <div class="description">
+                    <h4>Peugeot 208</h4>
+                    <p>Diesel 5 portes bla bla</p>
+                    <p>999 € - Agence de Paris</p>
+                    <button type="button">Réserver et payer</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- bot main, agence -->
+        <div class="bot-main">
+            <img src="img/agence.jpg" alt="agence">
+            <div class="agence">
+                <p>Notre agence de Paris <br>
+                   300 boulevard de vaugirard, 75015, Paris <br>
+                   Ouvert 7j/7 de 09h à 13h et de 14h à 20h <br>
+                   01 49 78 21 33 <br>
+                   contact@vtc.com
+                </p>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- lien jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- lien js -->
+    <script src="js/script.js"></script>
+</body>
+</html>
